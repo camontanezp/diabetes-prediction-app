@@ -4,3 +4,4 @@ config.json
 diabetes_mltable/
 sample-data.json
 mlflow-model/
+.env
