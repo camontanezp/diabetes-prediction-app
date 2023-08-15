@@ -28,7 +28,7 @@ def result():
     }
     body = bytes(json.dumps(data), 'utf-8')
 
-    url = 'https://endpoint-08141233.eastus.inference.ml.azure.com/score'
+    url = os.getenv("MODEL_END_POINT")
 
     load_dotenv()
     keyVaultName = os.getenv("KEY_VAULT_NAME")
