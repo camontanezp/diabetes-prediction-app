@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Alzheimer Prediction</title>
+    <title>Diabetes Prediction</title>
 </head>
 <html>
 
 <body>
     <main>
         <div>
-            <h1>Alzheimer Prediction App</h1>
+            <h1>Diabetes Prediction App</h1>
         </div>
-        <form>
+        <form method="post" action="{{url_for('result')}}">
             <div>
                 <p>Fill in the form and click the "Predict" button to get a prediction.</p>
             </div>
 
             <div>
                 <div>
-                    <label for="age">Age</label>
+                    <label for="Pregnancies">Pregnancies</label>
                 </div>
                 <div>
-                    <input type="number" name="age">
+                    <input type="number" name="Pregnancies">
                 </div>
-
             </div>
             <div>
                 <div>
-                    <label for="education">Education</label>
+                    <label for="PlasmaGlucose">PlasmaGlucose</label>
                 </div>
                 <div>
-                    <input type="number" name="education">
+                    <input type="number" name="PlasmaGlucose">
                 </div>
-
             </div>
             <div>
                 <div>
-                    <label for="sex">Sex</label>
+                    <label for="DiastolicBloodPressure">DiastolicBloodPressure</label>
                 </div>
                 <div>
-                    <select name="sex">
-                        <option value="F">Female</option>
-                        <option value="M">Male</option>
-                    </select>
+                    <input type="number" name="DiastolicBloodPressure">
                 </div>
-
             </div>
-
+            <div>
+                <div>
+                    <label for="TricepsThickness">TricepsThickness</label>
+                </div>
+                <div>
+                    <input type="number" name="TricepsThickness">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="SerumInsulin">SerumInsulin</label>
+                </div>
+                <div>
+                    <input type="number" name="SerumInsulin">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="BMI">BMI</label>
+                </div>
+                <div>
+                    <input type="number" step="0.0001" name="BMI">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="DiabetesPedigree">DiabetesPedigree</label>
+                </div>
+                <div>
+                    <input type="number" step="0.0001" name="DiabetesPedigree">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="Age">Age</label>
+                </div>
+                <div>
+                    <input type="number" name="Age">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="submit" value="Predict">
+                </div>
+            </div>
         </form>
     </main>
 </body>
