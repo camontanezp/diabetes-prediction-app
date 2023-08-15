@@ -27,10 +27,11 @@ def result():
             }
     }
     body = bytes(json.dumps(data), 'utf-8')
-
+    
+    load_dotenv()
+    
     url = os.getenv("MODEL_END_POINT")
 
-    load_dotenv()
     keyVaultName = os.getenv("KEY_VAULT_NAME")
     KVUri = f"https://{keyVaultName}.vault.azure.net"
 
