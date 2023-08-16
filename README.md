@@ -15,6 +15,7 @@ To run the notebooks the following are needed:
 - An active Azure Machine Learning (AML) workspace. See [this](https://learn.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources?view=azureml-api-2).
 - The config.json file corresponding to the AML workspace. This file should replace `model-creation/config-example.json`.
 - A Python 3.9 virtual env with the packages in `requirements-local.txt` installed.
+- The data for training. The file available here can also be found in [this repo](https://github.com/MicrosoftLearning/mslearn-azure-ml/tree/main/Labs/07/data).
 
 ## App deployment
 
