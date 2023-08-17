@@ -26,6 +26,9 @@ The `app` folder contains a Flask application that receives input data, consumes
 To run and deploy the app the following are needed:
 
 - And active Azure subscription.
+- An Azure key vault to save the model's endpoint key. See [this](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python?tabs=azure-cli). 
 - A web app from Azure App Service. See [this](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cazure-cli%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli).
-- the Azure CLI. See [this](https://learn.microsoft.com/en-us/cli/azure/).
+- Setting up a managed identity for the app service, so that it can access the key vault. See [this](https://learn.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=portal%2Chttp).
+- Assigning key vault reader access to the managed identity in the key vault access control. See [this](https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide?tabs=azure-cli).
+- The Azure CLI. See [this](https://learn.microsoft.com/en-us/cli/azure/).
 - A Python 3.9 virtual env with the packages in `requirements-local.txt` installed.
