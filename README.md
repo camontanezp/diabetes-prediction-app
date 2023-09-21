@@ -21,6 +21,8 @@ To run the notebooks the following are needed:
 
 The `app` folder contains a Flask application that receives input data, consumes the trained model, and returns a prediction ("Diabetes" or "No Diabetes"). For the app to work, `.env.example` needs to be edited with the correct values for the model endpoint and the key vault name, and then renamed to `.env`.
 
+To deploy, first "zip" the files/folder `.env`, `app.py`, `templates`, and `requirements.txt` into the file `app.zip`. Then, use Azure CLI to deploy with the following command: `az webapp deploy --name YOUR_APP_NAME --resource-group YOUR_RG_NAME --src-path .\app.zip`.
+
 ### Prerequisites
 
 To run and deploy the app the following are needed:
