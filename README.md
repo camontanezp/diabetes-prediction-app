@@ -2,8 +2,6 @@
 
 This repo contains the data and code to train and deploy a model to an online endpoint, as well as the code for a web app that uses the model to make a real-time prediction on data input by a user. Both the model and the app are hosted in Azure.
 
-Go to [diabetes-prediction-app](https://diabetes-prediction-example.azurewebsites.net/) to try it out.
-
 ## Model training and deployment
 
 The `model-creation` folder contains the data (`data/diabetes.csv`), the training code (`train_model.ipynb`), and the deployment code (`deploy-model.ipynb`). These scripts use Azure ML's Python SDK.
