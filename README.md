@@ -6,6 +6,8 @@ This is how the simple UI of the app looks like:
 
 ![UI of the diabetes prediction app](image.png)
 
+The apps URL is [this](diabetes-prediction-example.azurewebsites.net)
+
 ## Model training and deployment
 
 The `model-creation` folder contains the data (`data/diabetes.csv`), the training code (`train_model.ipynb`), and the deployment code (`deploy-model.ipynb`). These scripts use Azure ML's Python SDK.
