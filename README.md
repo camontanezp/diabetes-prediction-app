@@ -6,7 +6,7 @@ This is how the simple UI of the app looks like:
 
 ![UI of the diabetes prediction app](image.png)
 
-The apps URL is [this](diabetes-prediction-example.azurewebsites.net)
+The apps URL is [this](https://diabetes-prediction-example.azurewebsites.net/).
 
 ## Model training and deployment
 
