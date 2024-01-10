@@ -16,44 +16,50 @@
             <p>Fill in the form and click the "Get prediction" button to get a prediction.</p>
         </div>
 
+
         <form method="post" action="{{url_for('result')}}">
-
-
-            <div class="form-group">
-                <label for="Pregnancies">Pregnancies</label>
-                <input type="number" min="0" class="form-control" name="Pregnancies">
-
-            </div>
-            <div class="form-group">
-                <label for="PlasmaGlucose">PlasmaGlucose</label>
-                <input type="number" min="0" class="form-control" name="PlasmaGlucose">
-            </div>
-            <div class="form-group">
-                <label for="DiastolicBloodPressure">DiastolicBloodPressure</label>
-                <input type="number" min="0" class="form-control" name="DiastolicBloodPressure">
-            </div>
-            <div class="form-group">
-                <label for="TricepsThickness">TricepsThickness</label>
-                <input type="number" min="0" class="form-control" name="TricepsThickness">
-            </div>
-            <div>
-                <label for="SerumInsulin">SerumInsulin</label>
-                <input type="number" min="0" class="form-control" name="SerumInsulin">
-            </div>
-            <div>
-                <label for="BMI">BMI</label>
-                <input type="number" min="0" class="form-control" step="0.0001" name="BMI">
-            </div>
-            <div>
-                <label for="DiabetesPedigree">DiabetesPedigree</label>
-                <input type="number" min="0" class="form-control" step="0.0001" name="DiabetesPedigree">
-            </div>
-            <div>
-                <label for="Age">Age</label>
-                <input type="number" min="0" class="form-control" name="Age">
-            </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Get prediction</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="Pregnancies">Pregnancies</label>
+                            <input type="number" min="0" class="form-control" name="Pregnancies">
+                        </div>
+                        <div class="form-group">
+                            <label for="PlasmaGlucose">PlasmaGlucose</label>
+                            <input type="number" min="0" class="form-control" name="PlasmaGlucose">
+                        </div>
+                        <div class="form-group">
+                            <label for="DiastolicBloodPressure">DiastolicBloodPressure</label>
+                            <input type="number" min="0" class="form-control" name="DiastolicBloodPressure">
+                        </div>
+                        <div class="form-group">
+                            <label for="TricepsThickness">TricepsThickness</label>
+                            <input type="number" min="0" class="form-control" name="TricepsThickness">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="SerumInsulin">SerumInsulin</label>
+                            <input type="number" min="0" class="form-control" name="SerumInsulin">
+                        </div>
+                        <div class="form-group">
+                            <label for="BMI">BMI</label>
+                            <input type="number" min="0" class="form-control" step="0.0001" name="BMI">
+                        </div>
+                        <div class="form-group">
+                            <label for="DiabetesPedigree">DiabetesPedigree</label>
+                            <input type="number" min="0" class="form-control" step="0.0001" name="DiabetesPedigree">
+                        </div>
+                        <div class="form-group">
+                            <label for="Age">Age</label>
+                            <input type="number" min="0" class="form-control" name="Age">
+                        </div>
+                        <div class="mt-2">
+                            <button type="submit" class="btn btn-primary">Get prediction</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
     </main>
