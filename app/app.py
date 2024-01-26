@@ -60,6 +60,7 @@ def result():
         else:
             result = 'Error'
     except urllib.error.HTTPError as error:
+        result = "The request failed with status code: " + str(error.code)
         print("The request failed with status code: " + str(error.code))
 
         # Print the headers - they include the request ID and the timestamp, which are useful for debugging the failure
